@@ -1,0 +1,110 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #083a97;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: rgb(10, 144, 197);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2, h3 {
+    color: #0e0000;
+    margin-bottom: 15px;
+}
+
+/* Imagen */
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+/* Formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botones */
+button {
+    background-color: #0b0d91;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #053986;
+}
+
+/* Sección de cursos guardados */
+.oculto {
+    display: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f3f6fa;
+    color: rgb(9, 52, 143);
+}
+
+/* Botón de eliminar */
+.eliminar {
+    background-color: #a70d1c;
+    color: rgb(230, 237, 238);
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;s
+    border-radius: 3px;
+    transition: background 0.3s ease;
+}
+
+.eliminar:hover {
+    background-color: #c82333;
+}
+
+/* Diseño Responsive */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}

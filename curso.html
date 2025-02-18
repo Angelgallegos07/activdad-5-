@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Cursos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Gestión de Cursos</h2>
+        <img src="cursos.jpg" alt="cursos" width="300">
+
+        <!-- Sección de Registro -->
+        <div id="registro">
+            <h3>Registrar Curso</h3>
+            <form id="formRegistro">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" required>
+
+                <label for="curso">Curso:</label>
+                <select id="curso" required>
+                    <option value="">Seleccione un curso</option>
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                </select>
+
+                <button type="submit">Registrar</button>
+            </form>
+            <p id="mensaje"></p>
+        </div>
+
+        <!-- Botón para mostrar cursos guardados -->
+        <button id="verCursos">Ver Cursos Guardados</button>
+
+        <!-- Sección de Cursos Guardados (Oculta al inicio) -->
+        <div id="guardados" class="oculto">
+            <h3>Cursos Guardados</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Correo</th>
+                        <th>Curso</th>
+                        <th>Acción</th>
+                    </tr>  
+                </thead>
+                <tbody id="tablaRegistros"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
